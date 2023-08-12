@@ -1,3 +1,5 @@
+
+New-AzResourceGroupDeployment -ResourceGroupName app-grp  -TemplateFile Nested.json
 Connect-AzAccount
 New-Item -Path 'C:\temp\Test Folder' -ItemType Directory          =====> to create folder in d drive
 New-Item -Path 'C:\temp\Test Folder\Test File.txt' -ItemType File ====>To create a file in that folder
