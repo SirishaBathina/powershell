@@ -1,1 +1,37 @@
 Connect-AzAccount
+New-Item -Path 'C:\temp\Test Folder' -ItemType Directory          =====> to create folder in d drive
+New-Item -Path 'C:\temp\Test Folder\Test File.txt' -ItemType File ====>To create a file in that folder
+Copy-Item 'C:\temp\Test Folder' 'C:\temp\Test Folder1'            ==========>To copy the folder
+Copy-Item 'C:\temp\Test Folder\Test File.txt' 'C:\temp\Test Folder1\Test File1.txt' ======>To copy files
+Remove-Item 'C:\temp\Test Folder1'                               ========================>To Delete the folder
+Remove-Item 'C:\temp\Test Folder\test.txt'                      =====================>To delete the files
+Move-Item "C:\temp\Test Folder" "C:\temp\Test Folder1"          ====================== > To move  folders
+ Move-Item C:\temp\Test1 C:\temp\siri                           ========================>To move files
+Rename-Item "C:\temp\Test Folder1" "C:\temp\Test1"              ========================>To rename folder
+Get-Date                                                      ================>to get the date
+set-date -Date (Get-Date).AddDays(-1)                        =====================>to get yesterday date
+set-date -Date (Get-Date).AddDays(1)                          ====================>to get tommorrow date
+Set-Content D:\temp\test\test.txt 'Welcome to the world siri' =======================>to set content to file
+get-Content C:\temp\siri\test.txt                            ===================>to get the content to the file
+New-Item D:\temp\test\test.xml -ItemType File                   ==================>To create a XML file
+Set-Content C:\temp\siri\test.xml 'Welcome to the world siri'
+get-Content C:\temp\siri\test.xml
+Clear-Content C:\temp\siri\test.txt ===========>to remove the content in the file
+Add-Content D:\temp\test\test.txt 'World!'    =================>to add the content to the file
+
+ $fruits = "apple","two","kiwi","orange","cherry","five"
+$fruits
+apple
+two
+kiwi
+orange
+cherry
+five
+$fruits | sort | get-unique =====to get unique
+apple
+cherry
+five
+kiwi
+orange
+two
+
